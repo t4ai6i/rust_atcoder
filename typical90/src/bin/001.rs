@@ -27,7 +27,6 @@ fn main() {
     let mut right = l + 1;
     while right - left > 1 {
         let mid = left + (right - left) / 2;
-        dbg!(&left, &right, &mid);
         if binary_search(mid, &xs, n, l, k) {
             left = mid;
         } else {
